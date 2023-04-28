@@ -1,0 +1,44 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xs:schema id="dsListeProg" targetNamespace="http://tempuri.org/dsListeProg.xsd" xmlns:mstns="http://tempuri.org/dsListeProg.xsd" xmlns="http://tempuri.org/dsListeProg.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:msprop="urn:schemas-microsoft-com:xml-msprop" attributeFormDefault="qualified" elementFormDefault="qualified">
+  <xs:annotation>
+    <xs:appinfo source="urn:schemas-microsoft-com:xml-msdatasource">
+      <DataSource DefaultConnectionIndex="0" FunctionsComponentName="QueriesTableAdapter" Modifier="AutoLayout, AnsiClass, Class, Public" SchemaSerializationMode="IncludeSchema" xmlns="urn:schemas-microsoft-com:xml-msdatasource">
+        <Connections />
+        <Tables />
+        <Sources />
+      </DataSource>
+    </xs:appinfo>
+  </xs:annotation>
+  <xs:element name="dsListeProg" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:Generator_UserDSName="dsListeProg" msprop:Generator_DataSetName="dsListeProg">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element name="T_programme" msprop:Generator_RowEvHandlerName="T_programmeRowChangeEventHandler" msprop:Generator_RowDeletedName="T_programmeRowDeleted" msprop:Generator_RowDeletingName="T_programmeRowDeleting" msprop:Generator_RowEvArgName="T_programmeRowChangeEvent" msprop:Generator_TablePropName="T_programme" msprop:Generator_RowChangedName="T_programmeRowChanged" msprop:Generator_RowChangingName="T_programmeRowChanging" msprop:Generator_TableClassName="T_programmeDataTable" msprop:Generator_RowClassName="T_programmeRow" msprop:Generator_TableVarName="tableT_programme" msprop:Generator_UserTableName="T_programme">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="No_x0020_Programme" msprop:Generator_ColumnPropNameInRow="No_Programme" msprop:Generator_ColumnPropNameInTable="No_ProgrammeColumn" msprop:Generator_ColumnVarNameInTable="columnNo_Programme" msprop:Generator_UserColumnName="No Programme">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="6" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="Nom_x0020_du_x0020_Programme" msprop:Generator_ColumnPropNameInRow="Nom_du_Programme" msprop:Generator_ColumnPropNameInTable="Nom_du_ProgrammeColumn" msprop:Generator_ColumnVarNameInTable="columnNom_du_Programme" msprop:Generator_UserColumnName="Nom du Programme">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="Nombre_x0020_d_x0027_heures_x0027_" msprop:Generator_ColumnPropNameInRow="_Nombre_d_heures_" msprop:Generator_ColumnPropNameInTable="_Nombre_d_heures_Column" msprop:Generator_ColumnVarNameInTable="_columnNombre_d_heures_" msprop:Generator_UserColumnName="Nombre d'heures'" type="xs:double" />
+              <xs:element name="Nombre_x0020_d_x0027_unités_x0027_" msprop:Generator_ColumnPropNameInRow="_Nombre_d_unités_" msprop:Generator_ColumnPropNameInTable="_Nombre_d_unités_Column" msprop:Generator_ColumnVarNameInTable="_columnNombre_d_unités_" msprop:Generator_UserColumnName="Nombre d'unités'" type="xs:int" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:choice>
+    </xs:complexType>
+    <xs:unique name="Constraint1" msdata:PrimaryKey="true">
+      <xs:selector xpath=".//mstns:T_programme" />
+      <xs:field xpath="mstns:No_x0020_Programme" />
+    </xs:unique>
+  </xs:element>
+</xs:schema>
